@@ -1,0 +1,97 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+.main-container{
+     width: 100%;
+     height: 100vh;
+     background-image: url('./todo-background.jpg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 20px;
+     
+}
+.main-container h2{
+     text-align: center;
+     font-weight: 700;
+     color: rgb(0, 213, 255);
+     font-size: 35px;
+     font-style: italic;
+     text-shadow:4px 4px 3px rgb(0, 0, 0) ;
+     filter: brightness(150%);
+}
+.todobox{
+     width:100%;
+     max-width: 650px;
+     background-color: rgb(255, 255, 255);
+     min-height: 200px;
+     border-radius: 20px;
+     padding: 20px;
+    
+}
+.todobox p{
+     font-size: 20px;
+     font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.row{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: #edffed;;
+     border-radius: 15px;
+     padding-left: 20px;
+     margin-bottom: 20px;
+}
+input{
+     flex: 1;
+     border: none;
+     outline: none;
+     padding: 10px;
+     background: transparent;
+     font-weight: 14px;
+}
+button{
+     border: none;
+     outline: none;
+     padding: 16px 50px;
+     background: #4dff3d;
+     color:#fff;
+     font-size: 16px;
+     cursor: pointer;
+     border-radius: 10px;
+}
+ul li{
+     list-style: none;
+     font-size: 17px;
+     padding: 12px 8px 12px 50px;
+     user-select:none;
+     cursor: pointer;
+     position: relative;
+}
+ul li.checked{
+     text-decoration: line-through;
+}
+ul li span{
+   position:absolute;  
+   right: 0;
+   /* top: 5px; */
+   width: 40px;
+   height: 40px;
+   font-size: 30px;
+   color: #ff0000;
+   line-height: 30px;
+   font-weight: 700;
+   text-align: center;
+   justify-content: center;
+   border-radius: 50%;
+}
+
+
