@@ -28,9 +28,9 @@
 }
 .todobox{
      width:100%;
-     max-width: 650px;
+     max-width: 600px;
      background-color: rgb(255, 255, 255);
-     min-height: 200px;
+     min-height: 250px;
      border-radius: 20px;
      padding: 20px;
     
@@ -40,6 +40,7 @@
      font-weight: 600;
     color: black;
     text-align: center;
+    margin-bottom: 10px;
 }
 .row{
      display: flex;
@@ -75,14 +76,17 @@ ul li{
      user-select:none;
      cursor: pointer;
      position: relative;
+     background-color: #4dff3d;
+     border-radius: 10px;
 }
 ul li.checked{
      text-decoration: line-through;
+     background-color: rgb(63, 175, 255);
 }
 ul li span{
    position:absolute;  
    right: 0;
-   /* top: 5px; */
+   top: 5px;
    width: 40px;
    height: 40px;
    font-size: 30px;
